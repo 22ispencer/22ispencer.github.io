@@ -7,11 +7,16 @@
 	</head>
 	<body>
 		<h1 id="hello-world">Hello, World</h1>
-		<button type="button" onmousedown="onPress">press me</button>
+		<button type="button" onclick="onPress()">press me</button>
 	</body>
 	<script>
 		function onPress( ) {
-			document.getElementById("hello-world").innerHTML = "hey"
+			helloWorld =document.getElementById("hello-world")
+			if (helloWorld.innerHTML == "Hello, World") {
+				helloWorld.innerHTML = "Goodbye, World"
+			} else {
+				helloWorld.innerHTML = "Hello, World"
+			}
 		}
 	</script>
 </html>
