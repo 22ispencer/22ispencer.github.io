@@ -1,22 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hello, World</title>
-	</head>
-	<body>
-		<h1 id="hello-world">Hello, World</h1>
-		<button type="button" onclick="onPress()">press me</button>
-	</body>
-	<script>
-		function onPress( ) {
-			helloWorld =document.getElementById("hello-world")
-			if (helloWorld.innerHTML == "Hello, World") {
-				helloWorld.innerHTML = "Goodbye, World"
-			} else {
-				helloWorld.innerHTML = "Hello, World"
-			}
-		}
-	</script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello, World</title>
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  </head>
+  <style>
+    p {
+      margin: 0;
+    }
+    body {
+      margin: 0;
+      background-color: #222;
+      color: white;
+      font-family: "W95font";
+    }
+
+    #desktop {
+      margin: 3.5vh auto;
+      background-color: #008080;
+      width: 116vh;
+      height: 87vh;
+      border-width: 3vh;
+      border-style: solid;
+      border-top-color: #ddd;
+      border-left-color: #ccc;
+      border-bottom-color: #bbb;
+      border-right-color: #ccc;
+    }
+
+    #desktop-icons td {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 128px;
+      height: 128px;
+      margin: 8px 8px;
+    }
+    #desktop-icons img {
+      width: 64px;
+      height: 64px;
+      image-rendering: pixelated;
+    }
+    #desktop-icons p {
+      font-size: 21.33px;
+      text-align: center;
+      line-height: 1;
+      height: 3.6em;
+    }
+  </style>
+  <body>
+    <div id="desktop">
+      <table id="desktop-icons">
+        <tr>
+          <td>
+            <img src="assets/images/windows95/Computers/My Computer.ico" />
+            <p>My Computer</p>
+          </td>
+          <td>
+            <img
+              src="assets/images/windows95/Network/Network Neighborhood (16x16px & 32x32px).ico"
+            />
+            <p>Network Neighborhood</p>
+          </td>
+          <td>
+            <img
+              src="assets/images/windows95/Recycle Bins/Empty Recycle Bin.ico"
+            />
+            <p>Recycle Bin</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script></script>
 </html>
